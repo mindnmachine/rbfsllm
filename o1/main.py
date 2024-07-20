@@ -35,7 +35,7 @@ def generate_name():
             st.error(f"An error occurred: {str(e)}")
 
 def main():
-    st.set_page_config(page_title="Beach Location Assit", page_icon="🐶")
+    st.set_page_config(page_title="Beach Location Assist", page_icon="🐶")
 
     if st.session_state.shutdown_requested:
         st.write("Shutting down...")
