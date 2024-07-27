@@ -1,0 +1,9 @@
+
+#This file is used by pip to install required python packages
+# Usage: pip install -r requirements.txt
+langflow
+Flask==3.0.3
+gunicorn
+Werkzeug==3.0.3
+
+
