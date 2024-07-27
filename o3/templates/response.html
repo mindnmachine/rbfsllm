@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Response</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Chatbot Response</h1>
+        <p><strong>Query:</strong> {{ query | safe }}</p>
+        <p><strong>Response:</strong></p>
+        <pre>{{ response | safe }}</pre>
+        <a href="{{ url_for('index') }}" class="btn btn-primary">Ask another question</a>
+    </div>
+</body>
+</html>
